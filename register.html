@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <style>
+      :root {
+        --highlight: #aaf900;
+      }
+    </style>
+    <title>Hack Me | Register</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hack Me</h1>
+    </header>
+
+    <main>
+      <h2>Register</h2>
+      <form action="" autocomplete="off" id="registerForm">
+        <div class="form_input">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter User Email"
+            required
+          />
+          <label for="email">Email</label>
+        </div>
+        <div class="form_input">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            required
+            minlength="8"
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+            title="Minimum eight characters with at least one uppercase letter, one lowercase letter, one number and one special character required"
+          />
+          <label for="password">Password</label>
+        </div>
+        <div class="form_input">
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Re-Enter Password"
+            required
+            minlength="8"
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+            title="Minimum eight characters with at least one uppercase letter, one lowercase letter, one number and one special character required"
+          />
+          <label for="confirm-password">Confirm Password</label>
+        </div>
+        <input type="submit" value="Register" id="registerButton" />
+      </form>
+      <nav>already have an account? <a href="./index.html">login</a></nav>
+    </main>
+
+    <footer>Presentation by Anish and Aarushi</footer>
+  </body>
+  <script src="./scripts/register.js"></script>
+</html>

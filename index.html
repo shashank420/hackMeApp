@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <style>
+      :root {
+        --highlight: #aaf900;
+      }
+    </style>
+    <title>Hack Me | Login</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hack Me</h1>
+    </header>
+
+    <main>
+      <h2>Login</h2>
+      <form action="" autocomplete="off" id="loginForm">
+        <div class="form_input">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter User Email"
+          />
+          <label for="email">Email</label>
+        </div>
+        <div class="form_input">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="8"
+            placeholder="Enter Password"
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+            title="Minimum eight characters with at least one uppercase letter, one lowercase letter, one number and one special character required"
+          />
+          <label for="password">Password</label>
+        </div>
+        <input type="submit" value="Login" id="loginButton" />
+      </form>
+      <nav>don't have an account? <a href="./register.html">register</a></nav>
+    </main>
+
+    <footer>Presentation by Anish and Aarushi</footer>
+  </body>
+  <script src="./scripts/login.js"></script>
+</html>
